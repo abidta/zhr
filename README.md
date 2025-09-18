@@ -1,72 +1,67 @@
 # zhr
 
-# ZHR is a modern Human Resource Management (HRM) system built with a Next.js frontend and a NestJS backend. It helps organizations manage employees, attendance, payroll, and other HR operations efficiently with a clean, scalable architecture.
+ ZHR is a modern Human Resource Management (HRM) system built with a Next.js frontend and a NestJS backend. It helps organizations manage employees, attendance, payroll, and other HR operations efficiently with a clean, scalable architecture.
 
+## Features
 
+- Employee Management – Add, edit, and manage employee profiles.
 
-#  Features
+- Attendance Tracking – Daily attendance, check-in/out, and working hours.
 
-# Employee Management – Add, edit, and manage employee profiles.
+- Leave Management – Employees can apply for leave, managers can approve/reject.
 
-# Attendance Tracking – Daily attendance, check-in/out, and working hours.
+- Payroll System – Salary calculation with allowances, deductions, and overtime.
 
-# Leave Management – Employees can apply for leave, managers can approve/reject.
+- Recruitment – Job postings, candidate management, and interview tracking.
 
-# Payroll System – Salary calculation with allowances, deductions, and overtime.
+- Reports & Analytics – Employee data, payroll summaries, and attendance trends.
 
-# Recruitment – Job postings, candidate management, and interview tracking.
+- Role-based Access – Admin, HR, Manager, and Employee roles with restricted permissions.
 
-# Reports & Analytics – Employee data, payroll summaries, and attendance trends.
+## Tech Stack
 
-# Role-based Access – Admin, HR, Manager, and Employee roles with restricted permissions.
+## Frontend
 
+- Next.js (React framework for SSR)
 
+- Tailwind CSS (UI styling)
 
-# Tech Stack
+## Backend (NestJS)
 
-# Frontend (Next.js)
+- NestJS (Node.js framework)
 
-# Next.js (React framework for SSR)
+- Postgres (database)
 
-# Tailwind CSS (UI styling)
+- Prisma(ORM)
 
+- JWT & Passport.js (authentication)
 
+- Swagger (API documentation)
 
+- pnpm (package manager)
 
-# Backend (NestJS)
+### backend setup(NestJS)
 
-# NestJS (Node.js framework)
+```sh
+    cd backend
+    pnpm install 
+ ```
 
-# MySQL (database)
+### start backend dev server
 
-# Prisma 
+```sh
+ pnpm --filter backend start:dev
+ ```
 
-# JWT & Passport.js (authentication)
+### Frontend Setup (Next.js)
 
-# Swagger (API documentation)
+```sh
+ cd frontend
+ pnpm install
+ ```
 
-# DevOps
+### start frontend dev server
 
-# pnpm (package manager)
-
-
-
-
-# backend setup(NestJS)
-
-# cd backend
-# pnpm install
-
-# start dev server
-# pnpm start:dev  or  pnpm --filter backend start:dev
-
-
-
-
-# Frontend Setup (Next.js)
-
-# cd frontend
-# pnpm install
-
-# start dev server
-# pnpm dev  or pnpm --filter frontend dev
+```sh
+ pnpm --filter frontend dev
+```
