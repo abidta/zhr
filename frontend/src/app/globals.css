@@ -1,8 +1,10 @@
 @import "tailwindcss";
+@plugin "daisyui";
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --color-primary: #7D62ED;
 }
 
 @theme inline {
